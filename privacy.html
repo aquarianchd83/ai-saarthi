@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – AiSaarthi</title>
+<meta name="description" content="How AiSaarthi collects, uses and protects your data and your customers' data.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316a34a'/%3E%3Ctext x='16' y='23' font-size='20' font-weight='700' text-anchor='middle' fill='white' font-family='Arial'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="logo"><span class="logo-mark">A</span>AiSaarthi</a>
+    <nav class="links" id="links">
+      <a href="index.html#features">What it does</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" data-app="login" href="#">Log in</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="section">
+  <div class="wrap narrow legal">
+    <h1>Privacy Policy</h1>
+    <p class="fine">Last updated: <span id="updated">24 November 2026</span></p>
+    <p>AiSaarthi helps businesses find customers, message them on WhatsApp, follow up, answer questions with AI and make promo videos. This page explains what data we handle and why. If you use AiSaarthi, you are the "business"; the people you message are your "customers".</p>
+
+    <h2>1. Data we collect</h2>
+    <ul>
+      <li><b>Account data:</b> your name, email, business name, country and login details.</li>
+      <li><b>Business content:</b> the products, prices, FAQs and other facts you add to your knowledge base.</li>
+      <li><b>Customer and lead data:</b> phone numbers, names, consent status, WhatsApp conversations, lead scores and follow-up dates, either uploaded by you or found by Customer Discovery from public web sources.</li>
+      <li><b>Usage and billing data:</b> credits used, campaign results (sent, delivered, read, replied), and payment status. Card details are handled by our payment provider, not stored by us.</li>
+      <li><b>Technical data:</b> basic device, browser and log information to keep the service secure and working.</li>
+    </ul>
+
+    <h2>2. How we use it</h2>
+    <ul>
+      <li>To run the features you switch on: discovery, campaigns, follow-ups, AI conversations and video creation.</li>
+      <li>To let the AI answer customers only from your own knowledge base, and to hand over to your team when needed.</li>
+      <li>To bill credits and plans, prevent abuse, and apply sending limits and consent checks.</li>
+      <li>To support you, fix bugs and improve the product.</li>
+    </ul>
+    <p>We do not sell your data or your customers' data.</p>
+
+    <h2>3. Consent and messaging</h2>
+    <p>Only people who have opted in should be messaged. You are responsible for having a valid legal basis and consent for the contacts you add. Replying <b>STOP</b> ends messages immediately and is respected by AiSaarthi. Follow-ups are sent only between 9 AM and 8 PM and no more than 3 times.</p>
+
+    <h2>4. Who we share data with</h2>
+    <p>We share data only with service providers needed to deliver AiSaarthi, such as:</p>
+    <ul>
+      <li><b>Meta / WhatsApp</b> to send and receive messages.</li>
+      <li><b>AI, voice and video providers</b> to write replies and scripts and to generate videos and voice-overs.</li>
+      <li><b>Payment and hosting providers</b> to take payments and run our servers.</li>
+    </ul>
+    <p>We may also disclose data if required by law. Each business's data is kept separate from other businesses.</p>
+
+    <h2>5. Storage and security</h2>
+    <p>Data is kept private to your business account. Every AI action is logged, and sensitive steps need human confirmation. We use reasonable technical and organisational safeguards, but no system is completely secure.</p>
+
+    <h2>6. How long we keep data</h2>
+    <p>We keep data while your account is active and for a reasonable time afterwards for legal, billing and security needs. You can ask us to delete your account and data at any time.</p>
+
+    <h2>7. Your rights</h2>
+    <p>You can ask to access, correct, export or delete your personal data, and to withdraw consent. Customers who were messaged can ask the business that messaged them, or us, to stop and delete their details.</p>
+
+    <h2>8. Cookies and local storage</h2>
+    <p>This marketing website does not use advertising cookies. The AiSaarthi app may use cookies or local storage to keep you signed in and remember settings.</p>
+
+    <h2>9. Children</h2>
+    <p>AiSaarthi is for businesses and is not meant for people under 18.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>If we change this policy we will update the date above and, for major changes, notify you in the app.</p>
+
+    <h2>11. Contact</h2>
+    <p>For privacy questions or requests, please contact us through the AiSaarthi app (Log in, then Support).</p>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="logo"><span class="logo-mark">A</span>AiSaarthi</span>
+    <span><a href="privacy.html">Privacy Policy</a> · © <span id="yr"></span> AiSaarthi.</span>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script>
+  document.querySelectorAll("[data-app]").forEach(function (a) {
+    var C = window.AiSaarthi;
+    a.href = C.APP_URL.replace(/\/$/, "") + (C.PATHS[a.dataset.app] || "/");
+  });
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  var b = document.getElementById("burger"), l = document.getElementById("links");
+  b.addEventListener("click", function () { b.setAttribute("aria-expanded", l.classList.toggle("open")); });
+</script>
+</body>
+</html>

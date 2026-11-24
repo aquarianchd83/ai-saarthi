@@ -126,3 +126,12 @@ details p{margin:.6em 0 0;color:var(--mut)}
 }
 @media (max-width:480px){.g4,.steps{grid-template-columns:1fr}.feat-item{flex-direction:column}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+/* legal pages */
+.legal h1{text-align:center;margin-bottom:.2em}
+.legal>.fine{text-align:center;margin-bottom:2rem}
+.legal h2{text-align:left;font-size:1.3rem;margin-top:2rem}
+.legal p,.legal li{color:var(--mut)}
+.legal ul{padding-left:1.2rem}
+.legal b{color:var(--ink)}
+.foot a{color:var(--mut)}.foot a:hover{color:var(--g)}
