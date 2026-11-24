@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – AiSaarthi</title>
+<meta name="description" content="Get in touch with the AiSaarthi team for support, sales, privacy or billing questions.">
+<link rel="icon" type="image/svg+xml" href="logos/logo-mark.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="logo"><img class="logo-mark" src="logos/logo-mark.svg" alt="" width="34" height="34">AiSaarthi</a>
+    <nav class="links" id="links">
+      <a href="index.html#features">What it does</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" data-app="login" href="#">Log in</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="section">
+  <div class="wrap narrow legal">
+    <h1>Contact us</h1>
+    <p class="center">Questions about AiSaarthi, your account, billing or privacy? We are happy to help.</p>
+
+    <div class="grid" style="margin-top:2rem">
+      <div class="card">
+        <h3>✉️ Email</h3>
+        <p><a href="mailto:info@aisaarthi.in">info@aisaarthi.in</a></p>
+        <p class="fine">Use this for support, sales, billing and privacy requests. Please include your registered business name or email so we can find your account quickly.</p>
+      </div>
+      <div class="card">
+        <h3>💬 Already a customer?</h3>
+        <p>Log in to the AiSaarthi app to manage your account, credits and campaigns.</p>
+        <p style="margin-top:12px"><a class="btn btn-primary btn-small" data-app="login" href="#">Log in</a></p>
+      </div>
+    </div>
+
+    <h2>Before you write</h2>
+    <ul>
+      <li>Pricing and credit questions: see <a href="index.html#pricing">Pricing</a> and the <a href="index.html#faq">FAQ</a>.</li>
+      <li>How we handle data: read our <a href="privacy.html">Privacy Policy</a>.</li>
+      <li>Rules for using the service: read our <a href="terms.html">Terms and Conditions</a>.</li>
+    </ul>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="logo"><img class="logo-mark" src="logos/logo-mark.svg" alt="" width="34" height="34">AiSaarthi</span>
+    <span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a> · <a href="contact.html">Contact</a> · © <span id="yr"></span> AiSaarthi.</span>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script>
+  document.querySelectorAll("[data-app]").forEach(function (a) {
+    var C = window.AiSaarthi;
+    a.href = C.APP_URL.replace(/\/$/, "") + (C.PATHS[a.dataset.app] || "/");
+  });
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  var b = document.getElementById("burger"), l = document.getElementById("links");
+  b.addEventListener("click", function () { b.setAttribute("aria-expanded", l.classList.toggle("open")); });
+</script>
+</body>
+</html>
