@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 56" role="img" aria-label="AiSaarthi">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs>
+<text x="0" y="38" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="800" letter-spacing="-1" textLength="140" fill="url(#g)">AiSaarthi</text>
+<circle cx="152" cy="30" r="4" fill="#16a34a"/>
+</svg>
