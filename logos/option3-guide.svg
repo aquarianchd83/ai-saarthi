@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56" role="img" aria-label="AiSaarthi">
+<circle cx="28" cy="28" r="28" fill="#16a34a"/>
+<path d="M28 11 40 43 28 36 16 43z" fill="#fff"/>
+<path d="M44 8l1.8 4.2L50 14l-4.2 1.8L44 20l-1.8-4.2L38 14l4.2-1.8z" fill="#bbf7d0"/>
+<text x="68" y="38" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="800" fill="#0f172a">Ai<tspan fill="#16a34a">Saarthi</tspan></text>
+</svg>
